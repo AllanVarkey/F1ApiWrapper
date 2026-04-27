@@ -2,7 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 var openF1BaseUrl = builder.Configuration["OpenF1BaseUrl"]
     ?? throw new InvalidOperationException("Configuration value 'OpenF1BaseUrl' is missing.");
 
-// Add services to the container.
+// Add services to the container. this is a test comment
 builder.Services.AddControllers();
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddHttpClient("OpenF1Api", client =>
